@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 id="boxes">active boxes</h1>
+    <br>
+    <p id="guesses"></p>
+    <br>
+
+    first guess: <input type="text" id="first">
+    <button type="button" name="button" onclick="showLetter(getElementById('first').value)">Show Letter</button>
+    <br>
+
+    second guess: <input type="text" id="second">
+    <button type="button" name="button" onclick="showLetter(getElementById('second').value)">Show Letter</button>
+    <br>
+
+    <button type="button" name="button" onclick="compareGuesses(getElementById('first').value, getElementById('second').value)">Submit</button>
+
+    <script src="game.js"></script>
+
+  </body>
+</html>
